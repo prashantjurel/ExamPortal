@@ -1,1 +1,13 @@
-<h1>this is the navbar</h1>
+<mat-toolbar color="primary">
+    <a [routerLink]="'/'" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu_book</mat-icon>
+    </a>
+    <span>Exam Portal</span>
+    <span class="example-spacer"></span>
+    <a mat-icon-button [routerLink]="'/login'" class="example-icon favorite-icon mr20" aria-label="Example icon-button with heart icon">
+      Login
+    </a>
+    <a mat-icon-button [routerLink]="'/signup'" class="example-icon ml20" style="margin-right: 50px;" aria-label="Example icon-button with share icon">
+      Register
+    </a>
+  </mat-toolbar>

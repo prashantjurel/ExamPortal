@@ -1,66 +1,74 @@
 <div class="bootstrap-wrapper">
     <div class="container">
-        <div class="row" style="margin-top: 20px;">
+        <div class="row">
             <div class="col-md-6 offset-md-3">
-
-                <div class="container text-center">
-                    <img src="../../../assets/logo.png" alt="logo for the Examportal" width="150" height="120">
-                </div>
-
-                <h1 class="text-center">Register here </h1>
-
-
-                <form (ngSubmit) = "formSubmit()">
-                    <!-- Username Field-->
-                    <mat-form-field class="full-width" appearance="outline">
-                        <mat-label>Username</mat-label>
-                        <input required [(ngModel)]="user.username" name="username" matInput placeholder="Enter your username">
-                    </mat-form-field>
-
-
-                    <!-- password Field-->
-                    <mat-form-field class="full-width" appearance="outline">
-                        <mat-label>Password</mat-label>
-                        <input required [(ngModel)]="user.password" name="password" type="password" matInput placeholder="Enter your password">
-                    </mat-form-field>
-
-
-                    <!-- Firstname Field-->
-                    <mat-form-field class="full-width" appearance="outline">
-                        <mat-label>First Name</mat-label>
-                        <input required [(ngModel)]="user.firstName" name="firstName"matInput placeholder="Enter your First Name">
-                    </mat-form-field>
-
-
-                    <!-- last name Field-->
-                    <mat-form-field class="full-width" appearance="outline">
-                        <mat-label>Last Name</mat-label>
-                        <input required [(ngModel)]="user.lastName" name="lastName" matInput placeholder="Enter your Last Name">
-                    </mat-form-field>
-
-
-                    <!-- email Field-->
-                    <mat-form-field class="full-width" appearance="outline">
-                        <mat-label>Email</mat-label>
-                        <input required [(ngModel)]="user.email" name="email" type="email" matInput placeholder="Enter your email address">
-                    </mat-form-field>
-
-
-                    <!-- phonenumber Field-->
-                    <mat-form-field class="full-width" appearance="outline">
-                        <mat-label>Phone Number</mat-label>
-                        <input required [(ngModel)]="user.phoneNumber" name="phoneNumber" matInput placeholder="Enter your phone number">
-                    </mat-form-field>
-
+                <mat-card class="pr20 pl20">
                     <div class="container text-center">
-                        <!--Button for register-->
-                        <button type="submit" mat-raised-button  color="accent">Register</button>
-                        <!--Button for reset-->
-                        <button style="margin-left: 20px;" mat-raised-button color="primary">Reset</button>
+                        <img src="../../../assets/logo.png" alt="logo for the Examportal" width="150" height="120">
                     </div>
 
-                </form>
+                    <h1 class="text-center">Register here </h1>
+
+
+                    <form (ngSubmit)="formSubmit()">
+                        <!-- Username Field-->
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>Username</mat-label>
+                            <input required [(ngModel)]="user.username" name="username" matInput
+                                placeholder="Enter your username">
+                        </mat-form-field>
+
+
+                        <!-- password Field-->
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>Password</mat-label>
+                            <input required [(ngModel)]="user.password" name="password" type="password" matInput
+                                placeholder="Enter your password">
+                        </mat-form-field>
+
+
+                        <!-- Firstname Field-->
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>First Name</mat-label>
+                            <input required [(ngModel)]="user.firstName" name="firstName" matInput
+                                placeholder="Enter your First Name">
+                        </mat-form-field>
+
+
+                        <!-- last name Field-->
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>Last Name</mat-label>
+                            <input required [(ngModel)]="user.lastName" name="lastName" matInput
+                                placeholder="Enter your Last Name">
+                        </mat-form-field>
+
+
+                        <!-- email Field-->
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>Email</mat-label>
+                            <input required [(ngModel)]="user.email" name="email" type="email" matInput
+                                placeholder="Enter your email address">
+                        </mat-form-field>
+
+
+                        <!-- phonenumber Field-->
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>Phone Number</mat-label>
+                            <input required [(ngModel)]="user.phoneNumber" name="phoneNumber" matInput
+                                placeholder="Enter your phone number">
+                        </mat-form-field>
+
+                        <div class="container text-center">
+                            <!--Button for register-->
+                            <button type="submit" class="mb20" mat-raised-button color="accent">Register</button>
+                            <!--Button for reset-->
+                            <button class="ml20 mb20" mat-raised-button color="primary">Reset</button>
+                        </div>
+
+                    </form>
+                </mat-card>
             </div>
+
 
         </div>
     </div>

@@ -1,10 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "@angular/material/prebuilt-themes/deeppurple-amber.css";
-html, body { height: 100%; }
+html, body { height: 100%; background-color:#F3E5F5 }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 /*Added Manually*/
 .text-center{
     text-align: center;
+}
+
+/*margin 20*/
+.ml20{
+    margin-left: 20px !important;
+}
+
+.mr20{
+    margin-right: 20px !important;
+}
+
+.mt20{
+    margin-top: 20px !important;
+}
+
+.mb20{
+    margin-bottom: 20px !important;
+}
+
+/*margin 10*/
+.ml10{
+    margin-left: 10px !important;
+}
+
+.mr10{
+    margin-right: 10px !important;
+}
+
+.mt10{
+    margin-top: 10px !important;
+}
+
+.mb10{
+    margin-bottom: 10px !important;
+}
+/*padding*/
+
+.pl20{
+    padding-left: 20px;
+}
+
+.pr20{
+    padding-right:20px;
 }

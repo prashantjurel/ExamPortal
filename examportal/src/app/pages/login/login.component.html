@@ -1,1 +1,36 @@
-<h1>This is login page</h1>
+
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <mat-card class="pl20 pr20">
+                    <div class="container text-center">
+                        <img src="../../../assets/logo.png" alt="Examportal Logo" width="150" height="120">
+                    </div>
+
+                    <h1 class="text-center">Login Here</h1>
+
+                    <form>
+                        <!-- Username Field-->
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>Username</mat-label>
+                            <input required matInput placeholder="Enter your username">
+                        </mat-form-field>
+
+                        <!-- Password Field-->
+                        <mat-form-field class="full-width " appearance="outline">
+                            <mat-label>Password</mat-label>
+                            <input required type="password" matInput placeholder="Enter your Password">
+                        </mat-form-field>
+
+                        <div class="container text-center">
+                            <button mat-raised-button class="mb20" color="primary">Login</button>
+                            <button mat-raised-button class="ml20 mb20">Sign Up</button>
+                        </div>
+                    </form>
+                </mat-card>
+            </div>
+
+        </div>
+    </div>
+</div>
