@@ -8,16 +8,27 @@ These are not the final renders of the web-app, the application may look differe
 The Renders will soon be added to this section
 
 # Development 
-The development of the application is still in progress, the app was primarily built on java using spring boot hibernate in the backend and using angular typescript for front-end.<br>
-Bootstrap and google's material UI has been extensively for the beautification of the website.
+The application is currently under development. The backend of the app is primarily built using Java and Spring Boot Hibernate, while the front-end is developed using Angular and TypeScript. Bootstrap and Google's Material UI have been used extensively to enhance the website's appearance.
 
 
 # TODO
-1. Implementing MVVM model to the app to make app loosely coupled
-2. Fully migration to kotlin
-3. Playing audio files in minimized state
-4. Getting playlist episodes based on the season
-5. Updation to forgot password logic
-6. Modification of submission data logic
-7. More UI changes
-8. Serialization
+1. Designing User Role Entity & Relation -- DONE &#x2705;
+2. DB Configuration -- DONE &#x2705;
+3. Creating USER ROLE entity -- DONE &#x2705;
+4. Create New User Service -- DONE &#x2705;
+5. Creating WEB SERVICE for User Registration -- DONE &#x2705;
+6. Adding Material UI | Bootstrap Grids Only -- DONE &#x2705;
+7. Angular Data Binding -- DONE &#x2705;
+8. Registration user data to server using angular -- DONE &#x2705;
+9. Showing classic Messages using MatSnackBar and SweetAlert while Registration -- DONE &#x2705;
+10. Designing Login Form with Angular Material UI -- DONE &#x2705;
+11. Creating Classic Navbar| Angular Routing| RouterLink -- DONE &#x2705;
+12. Login at Backend using JWT Authentication -- DONE &#x2705;
+13. Login at FrontEnd
+14. Login Logic in Angular with Spring Boot
+15. Finishing up Login Module
+16. BCryptPasswordEncoder in Spring
+17. Working on ADMIN UI | Showing Profile detail in Profile Component
+18. Designing and Showing Profile Details
+19. Working on admin dashboard
+20. Creating Models for Category Quiz Question
