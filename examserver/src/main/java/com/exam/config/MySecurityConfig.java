@@ -16,6 +16,9 @@ import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.reactive.CorsWebFilter;
+import org.springframework.web.cors.reactive.UrlBasedCorsConfigurationSource;
 
 @EnableWebSecurity
 @Configuration
@@ -45,6 +48,7 @@ public class MySecurityConfig extends WebSecurityConfiguration {
 	public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 		
 		System.out.println("i reached filterchain");
+		http.addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
 		return	http.csrf(csrf -> csrf.disable())
 				.authorizeHttpRequests(
 						auth -> auth.requestMatchers("/generate-token", "/user/").permitAll().anyRequest().authenticated()

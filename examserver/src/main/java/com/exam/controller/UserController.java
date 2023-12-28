@@ -21,7 +21,7 @@ import com.exam.service.UserService;
 
 @RestController
 @RequestMapping("/user")
-@CrossOrigin(origins = "*")
+@CrossOrigin
 public class UserController {
 	
 	@Autowired

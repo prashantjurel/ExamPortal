@@ -1,4 +1,3 @@
-
 <div class="bootstrap-wrapper">
     <div class="container">
         <div class="row">
@@ -10,17 +9,19 @@
 
                     <h1 class="text-center">Login Here</h1>
 
-                    <form>
+                    <form (ngSubmit)="formSubmit()">
+                        {{loginData | json}}
                         <!-- Username Field-->
                         <mat-form-field class="full-width" appearance="outline">
                             <mat-label>Username</mat-label>
-                            <input required matInput placeholder="Enter your username">
+                            <input [(ngModel)]="loginData.username" name = "username" required matInput placeholder="Enter your username">
                         </mat-form-field>
 
                         <!-- Password Field-->
                         <mat-form-field class="full-width " appearance="outline">
                             <mat-label>Password</mat-label>
-                            <input required type="password" matInput placeholder="Enter your Password">
+                            <input [(ngModel)]="loginData.password" name = "password" required type="password" matInput
+                                placeholder="Enter your Password">
                         </mat-form-field>
 
                         <div class="container text-center">

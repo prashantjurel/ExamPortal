@@ -1,5 +1,6 @@
 package com.exam;
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -7,6 +8,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.CorsConfigurationSource;
+import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
+import org.springframework.web.filter.CorsFilter;
 
 import com.exam.model.Role;
 import com.exam.model.User;
@@ -54,5 +60,6 @@ public class ExamserverApplication implements CommandLineRunner {
 //		User user2 = this.userService.createUser(user, userRoleSet);
 //		System.out.println(user2.getUsername());
 	}
+	
 
 }
