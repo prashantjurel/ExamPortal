@@ -32,7 +32,14 @@ export class LoginComponent {
       return;
     }
     this.login.generateToken(this.loginData).subscribe({
-      next: (data: any) => { console.log(data), console.log(data) },
+      next: (data: any) => { this.login.loginUser(data.token); 
+                             this.login.getCurrentUser().subscribe(
+                              {
+                                next: (user: any) => {this.login.setUser(user); console.log(user)},
+                                error: (e) => { console.log(e);},
+                                complete: () => {console.info("complete");}
+                              }
+                             )},
       error: (e) => { console.error(e); },
       complete: () => { console.info('complete'); }
     }
