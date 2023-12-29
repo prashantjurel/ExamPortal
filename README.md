@@ -24,7 +24,7 @@ The application is currently under development. The backend of the app is primar
 10. Designing Login Form with Angular Material UI -- DONE &#x2705;
 11. Creating Classic Navbar| Angular Routing| RouterLink -- DONE &#x2705;
 12. Login at Backend using JWT Authentication -- DONE &#x2705;
-13. Login at FrontEnd
+13. Login at FrontEnd  -- DONE &#x2705;
 14. Login Logic in Angular with Spring Boot
 15. Finishing up Login Module
 16. BCryptPasswordEncoder in Spring
