@@ -35,8 +35,24 @@ export class LoginComponent {
       next: (data: any) => { this.login.loginUser(data.token); 
                              this.login.getCurrentUser().subscribe(
                               {
-                                next: (user: any) => {this.login.setUser(user); console.log(user)},
-                                error: (e) => { console.log(e);},
+                                next: (user: any) => {
+                                  this.login.setUser(user); 
+                                  console.log(user)
+                                  //Redirection for user dashboard and admin dashboard
+                                  if(this.login.getUserRole()=='ADMIN'){
+                                    //admin dashboard
+                                    window.location.href = '/admin'
+                                  }
+                                  else if (this.login.getUserRole() == 'NORMAL'){
+                                    //user dashboard
+                                    window.location.href = '/user-dashboard'
+                                  }
+                                  else{
+                                    this.login.logout();
+                                  }
+
+                                },
+                                error: (e) => { this.snack.open("invalid details",'',{duration :3000}); console.log(e);},
                                 complete: () => {console.info("complete");}
                               }
                              )},
