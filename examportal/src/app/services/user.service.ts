@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import baseUrl from './helper';
 
@@ -7,14 +7,20 @@ import baseUrl from './helper';
 })
 export class UserService {
 
+  private _options = { headers: new HttpHeaders({ 'Content-Type': 'application/json' }) };
+
+
   constructor(
 
     private http:HttpClient
+    
   ) { }
 
   //add user
   public addUser(user:any){
-    return this.http.post(`${baseUrl}/user/`,user);
+    console.log("inside add user");
+    
+    return this.http.post("http://localhost:8080/user",user,this._options);
 
   }
 

@@ -21,7 +21,7 @@ import com.exam.service.UserService;
 
 @RestController
 @RequestMapping("/user")
-@CrossOrigin
+@CrossOrigin(origins = "*")
 public class UserController {
 	
 	@Autowired
@@ -29,7 +29,7 @@ public class UserController {
 	
 	
 	//creating user
-	@CrossOrigin(origins = "*")
+	@CrossOrigin("*")
 	@PostMapping("/")
 	public User createUser(@RequestBody User user) throws Exception {
 		

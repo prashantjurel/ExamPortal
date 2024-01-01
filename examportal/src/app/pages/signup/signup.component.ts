@@ -13,6 +13,8 @@ export class SignupComponent {
 
   constructor(private userService: UserService, private _snackBar : MatSnackBar) { }
 
+  ngOnInit() : void{}
+
   public user = {
     username: '',
     firstName: '',
