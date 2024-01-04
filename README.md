@@ -25,10 +25,11 @@ The application is currently under development. The backend of the app is primar
 11. Creating Classic Navbar| Angular Routing| RouterLink -- DONE &#x2705;
 12. Login at Backend using JWT Authentication -- DONE &#x2705;
 13. Login at FrontEnd  -- DONE &#x2705;
-14. Login Logic in Angular with Spring Boot
-15. Finishing up Login Module
-16. BCryptPasswordEncoder in Spring
-17. Working on ADMIN UI | Showing Profile detail in Profile Component
-18. Designing and Showing Profile Details
-19. Working on admin dashboard
-20. Creating Models for Category Quiz Question
+14. Revisiting the old errors for login
+15. Login Logic in Angular with Spring Boot
+16. Finishing up Login Module
+17. BCryptPasswordEncoder in Spring
+18. Working on ADMIN UI | Showing Profile detail in Profile Component
+19. Designing and Showing Profile Details
+20. Working on admin dashboard
+21. Creating Models for Category Quiz Question
